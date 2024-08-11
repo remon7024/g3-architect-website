@@ -112,6 +112,30 @@
 .quick list{
   font-weight: 500;
 }
+/*   feature related style  */
+.feature{
+  gap: 140px;
+}
+
+#featuer-section-title{
+  border-left: solid #FF900E;
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.feature-card{
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px;
+  margin-bottom: 20px;
+}
+.feature-card,.feature-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+
+
 
 /*  fact related style  */
 .fact-card{
