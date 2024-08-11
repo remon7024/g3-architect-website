@@ -144,6 +144,20 @@
 .fact-description{
   max-width: 540px;
 }
+/*   sonpensor related style  */
+.senponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.senponsor-company{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.senponsor-company{
+  filter: grayscale(100%);
+}
+
 
 /*  medium size device*/
 
@@ -154,6 +168,10 @@
   .our-feature{
     margin-left: 50px;
   }
+  .senponsor-company,.fact-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
   
 }
 /*  responsive media query */
@@ -161,12 +179,23 @@
 @media screen and (max-width:576px) { 
   .navbar,.nav-link,.teams{
     flex-direction: column;}
-  .team-img-content{
-    grid-template-columns: repeat(1, 1fr);
+  .team-img-content,.fact-container,.senponsor-company{
+    grid-template-columns: 1fr;
+  }
+  .fact-container{
+    justify-items: center;
+    gap: 24px;
+  }
+  .senponsor-company{
+    justify-content: center;
+    gap: 45px;
   }
   .our-feature{
     margin-left: 20px;
   }
   
-}
+
+  }
+  
+
 
